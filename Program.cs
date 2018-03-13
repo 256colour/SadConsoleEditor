@@ -36,6 +36,8 @@ namespace SadConsoleEditor
 
             // Start the game.
             SadConsole.Game.Instance.Run();
+
+            SadConsole.Game.Instance.Dispose();
         }
 
         private static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
